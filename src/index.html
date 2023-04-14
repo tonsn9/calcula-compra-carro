@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simulador de compra de carro</title>
+  </head>
+  <body>
+    <h1>Simulador de compra de carro</h1>
+    <h2>Projeto que simula o a compra de um carro usando a regra 20-04-10</h2>
+    <div>
+      <p>
+        Você precisará dar 20% de entrada no veículo, o financiamento não pode
+        passar de 4 anos, o valor da parcela não pode comprometer mais de 10% do
+        seu salário
+      </p>
+    </div>
+    <form>
+      <label for="valorCarro">Valor do carro:</label>
+      <input type="number" id="valorCarro" name="valorCarro" />
+
+      <label for="salarioLiquido">Salário líquido:</label>
+      <input type="number" id="salarioLiquido" name="salarioLiquido" />
+
+      <label for="prazoFinanciamento"
+        >Prazo máximo de financiamento (meses):</label
+      >
+      <input type="number" id="prazoFinanciamento" name="prazoFinanciamento" />
+
+      <button type="submit" id="calcularCompra">Calcular Compra</button>
+    </form>
+    <div>
+      <p class="resultadoCarro"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
